@@ -377,6 +377,12 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
+  transition: all 0.2s;
+}
+.projects__row-img:hover {
+  scale: 1.05;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .projects__row-content {
   padding: 2rem 0;

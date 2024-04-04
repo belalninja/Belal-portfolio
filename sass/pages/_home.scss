@@ -49,10 +49,10 @@
     display: block;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
-    transition: background .3s;
+    transition: background 0.3s;
 
     &:hover {
-      background: rgba(#fff,.1);
+      background: rgba(#fff, 0.1);
     }
 
     &--bd-none {
@@ -153,6 +153,12 @@
       width: 100%;
       display: block;
       object-fit: cover;
+      transition: all 0.2s;
+    }
+    &-img:hover {
+      scale: 1.05;
+      transition: all 0.2s;
+      cursor: pointer;
     }
     &-content {
       padding: 2rem 0;
