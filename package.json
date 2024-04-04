@@ -1,0 +1,21 @@
+{
+  "name": "belal-portfolio",
+  "homepage": "https://github.com/belalninja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "compress:css": "sass css/style.css css/style.css --style=compressed",
+    "build": "npm-run-all prefix:css compress:css"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.74.1"
+  }
+}
